@@ -1,0 +1,26 @@
+@media screen and (min-width: 400px) {
+  body {
+    background-color: red; }
+
+  .texto {
+    font-size: 60px; } }
+@media screen and (min-width: 500px) {
+  body {
+    background-color: blue; }
+
+  .texto {
+    font-size: 75px; } }
+@media screen and (min-width: 600px) {
+  body {
+    background-color: orange; }
+
+  .texto {
+    font-size: 90px; } }
+@media screen and (min-width: 700px) {
+  body {
+    background-color: grey; }
+
+  .texto {
+    font-size: 105px; } }
+
+/*# sourceMappingURL=style.css.map */

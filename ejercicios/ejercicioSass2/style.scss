@@ -1,0 +1,44 @@
+@import 'auxiliar1';
+
+@function calcularFuente($tam){
+    @return $tam*0.15;
+}
+@media screen and (min-width: $media1){
+    body{
+        background-color: red;
+    }
+    .texto{
+        font-size: calcularFuente($media1);
+    }
+}
+
+@media screen and (min-width: $media2){
+    body{
+        background-color: blue;
+    }
+
+    .texto{
+        font-size: calcularFuente($media2);
+    }
+}
+
+@media screen and (min-width: $media3){
+    body{
+        background-color: orange;
+    }
+
+    .texto{
+        font-size: calcularFuente($media3);
+    }
+}
+
+@media screen and (min-width: $media4){
+    body{
+        background-color: grey;
+    }
+
+    .texto{
+        font-size: calcularFuente($media4);
+    }
+}
+
