@@ -1,0 +1,53 @@
+#contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between  ;
+    align-content: space-between;
+    width: 100%;
+    height: 1000px;
+}
+
+#contenedor div{
+    border: solid black 1px;
+    background-color: red;
+    height: 100px;
+    width: 30%;
+}
+
+@media screen and (min-width: 400px){
+    #contenedor{
+    align-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 500px){
+    #contenedor{
+        align-content: flex-end;
+        }
+    }
+
+@media screen and (min-width: 600px){
+    #contenedor{
+        align-content: center;
+        }
+    }
+
+@media screen and (min-width: 700px){
+    #contenedor{
+        align-content: space-between;
+        }
+    }
+
+@media screen and (min-width: 800px){
+    #contenedor{
+        align-content: space-around;
+        }
+    }
+
+@media screen and (min-width: 900px){
+    #contenedor{
+        align-content: stretch;
+        }
+    }
+
+

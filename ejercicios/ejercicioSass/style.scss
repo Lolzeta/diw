@@ -1,0 +1,61 @@
+@import 'variables';
+
+body{
+    display: grid;
+    grid-template-columns: $columnas;
+}
+
+header{
+    grid-column: span $columnas;
+    background-color: $headerColor;
+    height: 75px;
+}
+
+main{
+    grid-column: span $columnas;
+    grid-template-columns: repeat(columnas,1fr);
+    background-color: $mainColor;
+}
+
+section{
+    grid-column: span $columnas;
+    display: grid;
+    grid-template-columns: $columnas;
+    margin:10px;
+}
+
+footer{
+    grid-column: span $columnas;
+    background-color: $footerColor;
+    height: 75px;
+}
+
+.#{$flexbox}{
+    grid-column: span $columnas;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: $flexAlin;
+    align-content: space-around;
+}
+
+.#{$flexbox} .#{$sectionDiv}{
+    #{$tam}-width: 100px;
+    #{$tam}-height: 50px;
+    width: $width;
+    height: 100px;
+    border: solid black 1px;
+    margin: 5px;
+    text-align: center;
+}
+
+.sectionTitle{
+    grid-column: 1/13;
+    color: $titleColor;
+    text-align: center;
+    font-size: 150%;
+}
+
+
+
+

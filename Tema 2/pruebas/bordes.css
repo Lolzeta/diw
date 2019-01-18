@@ -1,0 +1,22 @@
+#cuadrado1{
+    margin: 0 auto;
+    border: blue solid 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 20px 2px green;
+}
+
+#cuadrado2{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 90%;
+    height: 20%;
+    border: solid;
+    border-image-source: url(https://cdn.shopify.com/s/files/1/0778/8857/products/Sap-Blue-PETG_large.jpg?v=1473243011);
+    border-image-repeat: stretch;
+    border-image-width: 20px;
+    border-image-slice: 159;
+    border-image-outset: 6;
+}

@@ -1,0 +1,15 @@
+div{
+    border: solid black 1;
+    background-color: red;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-columns: repeat(10,10%);
+}
+
+#grid1{
+    grid-row-start: 1;
+    grid-row-end: 10;
+}

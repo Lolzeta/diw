@@ -1,0 +1,56 @@
+body{
+    background-image: url(https://i.kym-cdn.com/photos/images/newsfeed/000/495/461/be9.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../images/crisma.otf);
+    font-weight: bold;
+}
+
+div{
+    height: 200px;
+    border: 5px solid black;
+    box-sizing: content-box;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+
+.div1{
+    background: rgb(255, 99, 71, 50%);
+    float:left;
+    width: 49%;
+    border-top-right-radius: 10%;
+    margin: 1px;
+}
+
+.div2{
+    background: linear-gradient(to left,blue,red);
+    float: right;
+    width: 49%;
+    padding: 1px;
+}
+
+.div3{
+    background: yellow;
+    width: 25%;
+    float: right;
+    box-shadow: 10px 10px 10px black;
+}
+
+.div4{
+    background: green;
+    width: 25%;
+    float: left;
+}
+
+.div5{
+    background: pink;
+    width:100%;
+    clear:both;
+}

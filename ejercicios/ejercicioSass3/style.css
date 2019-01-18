@@ -1,0 +1,87 @@
+.cajaMain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.cajaMain div {
+  width: 100%;
+  height: 150px;
+  background-color: palevioletred;
+  border: solid black 1px;
+  margin: 2px; }
+
+@media screen and (max-width: 800px) {
+  .cajaMain {
+    grid-template-columns: repeat(4, 1fr); } }
+@media screen and (max-width: 700px) {
+  .cajaMain {
+    grid-template-columns: repeat(3, 1fr); } }
+@media screen and (max-width: 600px) {
+  .cajaMain {
+    grid-template-columns: repeat(2, 1fr); } }
+@media screen and (max-width: 500px) {
+  .cajaMain {
+    grid-template-columns: repeat(1, 1fr); } }
+.cajaMain .item1 {
+  border-width: 1px; }
+
+.cajaMain .item2 {
+  border-width: 2px; }
+
+.cajaMain .item3 {
+  border-width: 3px; }
+
+.cajaMain .item4 {
+  border-width: 4px; }
+
+.cajaMain .item5 {
+  border-width: 5px; }
+
+.cajaMain .item6 {
+  border-width: 6px; }
+
+.cajaMain .item7 {
+  border-width: 7px; }
+
+.cajaMain .item8 {
+  border-width: 8px; }
+
+.cajaMain .impar-item {
+  background: url("images/impar.png");
+  background-size: cover; }
+
+.cajaMain .par-item {
+  background: url("images/par.png");
+  background-size: cover; }
+
+.boton-peligro {
+  background: -moz-linear-gradient(indianred, red, darkred);
+  background: -webkit-linear-gradient(indianred, red, darkred);
+  background: linear-gradient(indianred, red, darkred); }
+
+.boton-info {
+  background: -moz-linear-gradient(lightblue, blue, darkblue);
+  background: -webkit-linear-gradient(lightblue, blue, darkblue);
+  background: linear-gradient(lightblue, blue, darkblue); }
+
+.boton-ok {
+  background: -moz-linear-gradient(lightgreen, green, darkgreen);
+  background: -webkit-linear-gradient(lightgreen, green, darkgreen);
+  background: linear-gradient(lightgreen, green, darkgreen); }
+
+.boton-aviso {
+  background: -moz-linear-gradient(lightyellow, lightgoldenrodyellow, yellow);
+  background: -webkit-linear-gradient(lightyellow, lightgoldenrodyellow, yellow);
+  background: linear-gradient(lightyellow, lightgoldenrodyellow, yellow); }
+
+.correcto, .incorrecto {
+  border: solid 2px;
+  background-color: aquamarine;
+  color: purple; }
+
+.correcto {
+  border-color: green; }
+
+.incorrecto {
+  border-color: red; }
+
+/*# sourceMappingURL=style.css.map */

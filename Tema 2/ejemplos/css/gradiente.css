@@ -23,3 +23,10 @@
     width:100%;
     height: 25%;
 }
+
+#cuadrado5{
+    background: linear-gradient(to top, black, white,grey,darkred);
+    color: darkred;
+    width: 100%;
+    height: 25%;
+}

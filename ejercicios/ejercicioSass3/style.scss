@@ -1,0 +1,112 @@
+$media1 : 800px;
+$media2 : 700px;
+$media3 : 600px;
+$media4 : 500px;
+
+$linea1 : 1;
+$linea2 : 2;
+$linea3 : 3;
+$linea4 : 4;
+
+.cajaMain{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cajaMain div{
+    width: 100%;
+    height: 150px;
+    background-color: palevioletred;
+    border: solid black 1px;
+    margin: 2px;
+}
+
+@media screen and (max-width: $media1){
+    .cajaMain{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (max-width: $media2){
+    .cajaMain{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: $media3){
+    .cajaMain{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: $media4){
+    .cajaMain{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@for $i from 1 through 8{
+    .cajaMain .item#{$i}{
+        border-width: #{$i}px;
+    }
+}
+
+$lista : (impar,par);
+@each $tipo in $lista{
+    .cajaMain .#{$tipo}-item{
+        background: url('images/#{$tipo}.png');
+        background-size: cover;
+    }
+}
+
+$rojo1 : indianred;
+$rojo2 : red;
+$rojo3 : darkred;
+
+$azul1: lightblue; 
+$azul2: blue; 
+$azul3: darkblue;
+
+$verde1: lightgreen;
+$verde2: green; 
+$verde3: darkgreen;
+
+$amarillo1: lightyellow;
+$amarillo2: lightgoldenrodyellow; 
+$amarillo3: yellow;
+
+
+
+
+
+$elementosBotones : (boton-peligro:linear-gradient($rojo1, $rojo2, $rojo3), boton-info:linear-gradient($azul1, $azul2, $azul3), boton-ok:linear-gradient($verde1, $verde2, $verde3), boton-aviso:linear-gradient($amarillo1, $amarillo2, $amarillo3));
+
+@mixin background-image($color){
+    background: -moz-#{$color};
+    background: -webkit-#{$color};
+    background: $color;
+}
+
+
+@each $elemento, $color in $elementosBotones{
+    .#{$elemento}{
+        @include background-image($color);
+    }
+}
+
+%inputido{
+    border: solid 2px;
+    background-color: aquamarine;
+    color: purple;
+}
+
+.correcto{
+    @extend %inputido;
+    border-color: green;
+}
+
+.incorrecto{
+    @extend %inputido;
+    border-color: red;
+}
+

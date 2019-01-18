@@ -1,0 +1,15 @@
+#cuadrado1{
+    background: url(https://i.pinimg.com/originals/53/31/79/533179100a6abce82b9b0ec7ce73470e.jpg) no-repeat;
+    background-size: cover;
+    color: black;
+    width: 50%;
+    height: 1000px;
+    float: right;
+}
+
+#cuadrado2{
+    background: linear-gradient(to bottom,#012561,#6D9FD0,#DEEFF7);
+    width: 50%;
+    height: 1000px;
+    float: left;
+}
